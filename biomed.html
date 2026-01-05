@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biomedical Engineering Devices | Medical Technology Catalog</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Educational catalog of biomedical engineering devices and modern healthcare equipment." />
+  <meta name="keywords" content="biomedical engineering devices, medical technology, modern healthcare equipment" />
+
+  <style>
+    :root {
+      --primary: #0f4c75;
+      --secondary: #3282b8;
+      --bg: #f4f6f8;
+      --text: #1b262c;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Segoe UI", Tahoma, sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    nav h1 {
+      font-size: 1.4rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 2rem;
+    }
+
+    .hero {
+      text-align: center;
+    }
+
+    .hero h2 {
+      color: var(--primary);
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    input, select {
+      padding: 0.6rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      min-width: 220px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.6rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+
+    .card h3 {
+      color: var(--secondary);
+    }
+
+    footer {
+      background: var(--text);
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <h1>Biomedical Engineering Devices</h1>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#catalog">Device Catalog</a></li>
+      <li><a href="#about">About Biomedical Engineering</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Biomedical devices & Medical Technology</h2>
+  <p>
+Biomedical engineering combines engineering, biology, and medicine to design technologies that improve diagnosis, treatment, and quality of life. This site presents key biomedical devices used in modern healthcare, explained in a clear and educational way.
+    
+  </p>
+</section>
+
+<section id="catalog">
+  <h2>Device Catalog</h2>
+
+  <div class="controls">
+    <input type="text" id="search" placeholder="Search devices..." />
+    <select id="filter">
+      <option value="all">All Categories</option>
+      <option value="Diagnostics">Diagnostics</option>
+      <option value="Laboratory">Laboratory & Analysis</option>
+      <option value="Therapeutic">Therapeutic & Treatment</option>
+      <option value="Monitoring">Wearables & Monitoring</option>
+      <option value="Rehabilitation">Rehabilitation & Assistive</option>
+    </select>
+  </div>
+
+  <div class="grid" id="deviceGrid"></div>
+</section>
+
+<section id="about">
+  <h2>About Biomedical Engineering</h2>
+  <p>
+    <strong>Biomedical engineering is an innovative field that combines engineering principles with medical and biological sciences to improve healthcare. It focuses on designing devices, equipment, and software that help diagnose, treat, and prevent diseases. 
+<br>
+Globally, the biomedical engineering market is growing rapidly. In 2025, it was valued at around $45 billion and is expected to reach $65 billion by 2030, with an annual growth rate of roughly 7%. This growth is driven by the increasing demand for advanced medical devices, aging populations, and the rise of chronic diseases such as diabetes and heart conditions.
+</br>
+<br>
+Biomedical engineers create a wide range of life-changing technologies. For example:
+
+Medical imaging devices like MRI and CT scanners help doctors detect diseases early. Over 35 million MRI scans are performed worldwide each year.
+
+Prosthetic limbs and implants are improving quality of life for millions; about 2 million Americans currently live with prosthetic devices.
+
+Wearable health technology, such as smartwatches and glucose monitors, allows real-time tracking of vital signs. In 2024, over 200 million wearable devices were in use globally.
+
+Beyond devices, biomedical engineers contribute to tissue engineering, regenerative medicine, and robot-assisted surgeries, making treatments more precise and less invasive. Their work not only saves lives but also enhances comfort, mobility, and recovery times for patients.
+</br>
+<br>
+
+In essence, biomedical engineering sits at the intersection of science, technology, and medicine, driving innovation that improves healthcare for millions worldwide.
+</br>
+  </p>
+
+
+</section>
+
+<footer>
+  <p>© 2026 Biomedical Engineering Devices — Educational Use</p>
+</footer>
+
+<script>
+  // Embedded SVG image generator (ALWAYS VISIBLE, no external links)
+  function embeddedImage(title, subtitle) {
+    const svg = `
+      <svg xmlns='http://www.w3.org/2000/svg' width='800' height='400'>
+        <defs>
+          <linearGradient id='g' x1='0' y1='0' x2='1' y2='1'>
+            <stop offset='0%' stop-color='#0f4c75'/>
+            <stop offset='100%' stop-color='#3282b8'/>
+          </linearGradient>
+        </defs>
+        <rect width='100%' height='100%' fill='url(#g)'/>
+        <text x='50' y='170' font-size='42' fill='white' font-weight='700'>${title}</text>
+        <text x='50' y='230' font-size='24' fill='white'>${subtitle}</text>
+        <text x='50' y='310' font-size='18' fill='rgba(255,255,255,0.85)'>Biomedical engineering device</text>
+      </svg>`;
+    return `data:image/svg+xml;utf8,${encodeURIComponent(svg)}`;
+  }
+
+
+  const devices = [
+  // IMPORTANT: Images are EMBEDDED directly (SVG data URLs) so they ALWAYS show.
+
+  // Diagnostics
+  {
+    name: "MRI (Magnetic Resonance Imaging)",
+    category: "Diagnostics",
+    img: "images/mri.jpg",
+    desc: "High-resolution imaging system for soft tissues using magnetic fields and radio waves.",
+    work: "Aligns hydrogen nuclei with a strong magnetic field and detects RF signals.",
+    app: "Hospitals, diagnostic centers"
+  },
+  {
+    name: "CT Scan",
+    category: "Diagnostics",
+    img: "images/ct.jpg",
+    desc: "X-ray based imaging producing detailed cross-sectional views of the body.",
+    work: "Rotating X-ray source and detectors reconstruct images.",
+    app: "Hospitals, emergency medicine"
+  },
+  {
+    name: "Ultrasound",
+    category: "Diagnostics",
+    img: "images/ultrasound.jpg",
+    desc: "Real-time imaging using high-frequency sound waves.",
+    work: "Echoes from tissues are converted into images.",
+    app: "Hospitals, clinics, prenatal care"
+  },
+  {
+    name: "ECG / Echocardiography",
+    category: "Diagnostics",
+    img:"images/ESG.jpg",
+    desc: "Systems for measuring electrical and mechanical heart activity.",
+    work: "Electrodes and ultrasound sensors capture cardiac signals.",
+    app: "Cardiology clinics"
+  },
+  {
+    name: "PET Scan",
+    category: "Diagnostics",
+    img: "images/petscan.jpg",
+    desc: "Functional imaging showing metabolic activity using radiotracers.",
+    work: "Detects gamma photons from positron annihilation.",
+    app: "Oncology, neurology"
+  },
+{
+  name: "X-ray Imaging System",
+  category: "Diagnostics",
+  img: "images/xray.jpg",
+  desc: "Produces images using X-ray radiation.",
+  work: "X-rays pass through the body and are absorbed differently by tissues.",
+  app: "Bone fracture and chest diagnostics"
+},
+{
+  name: "Mammography System",
+  category: "Diagnostics",
+  img: "images/mammography.jpg",
+  desc: "Specialized imaging for breast tissue.",
+  work: "Uses low-dose X-rays for high-contrast breast imaging.",
+  app: "Breast cancer screening"
+},
+{
+  name: "Endoscopy System",
+  category: "Diagnostics",
+  img: "images/endoscopy.jpg",
+  desc: "Visualizes internal organs using a flexible camera.",
+  work: "Camera transmits real-time images from inside the body.",
+  app: "Gastrointestinal diagnostics"
+},
+{
+  name: "Optical Coherence Tomography",
+  category: "Diagnostics",
+  img: "images/oct.jpg",
+  desc: "High-resolution optical imaging technique.",
+  work: "Uses reflected light to create cross-sectional images.",
+  app: "Ophthalmology diagnostics"
+},
+{
+  name: "AI Diagnostic Software",
+  category: "Diagnostics",
+  img: "images/ai.jpg",
+  desc: "Uses artificial intelligence to analyze medical images.",
+  work: "Applies neural networks to detect patterns and anomalies.",
+  app: "Radiology and early disease detection"
+},
+
+  // Laboratory
+  {
+    name: "Centrifuge",
+    category: "Laboratory",
+    img: "images/centrifuge.jpg",
+    desc: "Separates samples by density using rotation.",
+    work: "Centrifugal force isolates components.",
+    app: "Clinical laboratories"
+  },
+  {
+    name: "Spectrophotometer",
+    category: "Laboratory",
+    img: "images/spectrophotometers.jpg",
+    desc: "Measures light absorption of biological samples.",
+    work: "Quantifies absorbance at specific wavelengths.",
+    app: "Biochemistry labs"
+  },
+  {
+    name: "PCR Machine",
+    category: "Laboratory",
+    img: "images/pcr.jpg",
+    desc: "Amplifies DNA for genetic analysis.",
+    work: "Thermal cycling replicates DNA sequences.",
+    app: "Molecular diagnostics"
+  },
+  {
+    name: "DNA / RNA Sequencer",
+    category: "Laboratory",
+    img: "images/sequencer.jpg",
+    desc: "Determines nucleotide sequences.",
+    work: "Detects signals during base incorporation.",
+    app: "Genomics labs"
+  },
+{
+  name: "Flow Cytometer",
+  category: "Laboratory",
+  img: "images/flowcytometer.jpg",
+  desc: "Analyzes physical and chemical properties of cells.",
+  work: "Cells pass through laser beams and scatter light.",
+  app: "Immunology and cancer research"
+},
+{
+  name: "ELISA Reader",
+  category: "Laboratory",
+  img: "images/elisa.jpg",
+  desc: "Detects proteins and antibodies in samples.",
+  work: "Measures color change from enzyme reactions.",
+  app: "Disease and infection testing"
+},
+{
+  name: "Hematology Analyzer",
+  category: "Laboratory",
+  img: "images/bloodanalyzer.jpg",
+  desc: "Automatically counts blood cells.",
+  work: "Uses impedance and optical methods.",
+  app: "Clinical blood analysis"
+},
+{
+  name: "Mass Spectrometer",
+  category: "Laboratory",
+  img: "images/massspectrometer.jpg",
+  desc: "Identifies chemical compounds by mass.",
+  work: "Ionizes samples and separates ions by mass-to-charge ratio.",
+  app: "Proteomics and drug analysis"
+},
+{
+  name: "Lab-on-a-Chip System",
+  category: "Laboratory",
+  img: "images/microfluidics.jpg",
+  desc: "Miniaturized laboratory on a microchip.",
+  work: "Manipulates tiny fluid volumes in microchannels.",
+  app: "Rapid diagnostics and research"
+},
+  // Therapeutic
+  {
+    name: "Ventilator",
+    category: "Therapeutic",
+    img: "images/ventilator.jpg",
+    desc: "Provides mechanical breathing support.",
+    work: "Controls airflow and pressure.",
+    app: "ICU, emergency care"
+  },
+  {
+    name: "Insulin Pump",
+    category: "Therapeutic",
+    img: "images/insuline.jpg",
+    desc: "Delivers insulin continuously.",
+    work: "Programmable micro-pump system.",
+    app: "Home diabetes care"
+  },
+  {
+    name: "Pacemaker / ICD",
+    category: "Therapeutic",
+    img: "images/ICD.jpg",
+    desc: "Implantable cardiac rhythm device.",
+    work: "Electrical stimulation of heart muscle.",
+    app: "Cardiac care"
+  },
+  {
+    name: "Robotic Surgery System",
+    category: "Therapeutic",
+    img: "images/robotic.jpg",
+    desc: "Computer-assisted surgical platform.",
+    work: "Robotic arms replicate surgeon motion.",
+    app: "Hospitals"
+  },
+{
+  name: "Defibrillator",
+  category: "Therapeutic",
+  img: "images/defibrillator.jpg",
+  desc: "Restores normal heart rhythm.",
+  work: "Delivers an electric shock to the heart.",
+  app: "Cardiac emergencies"
+},
+{
+  name: "Radiation Therapy System",
+  category: "Therapeutic",
+  img: "images/radiotherapy.jpg",
+  desc: "Treats cancer using ionizing radiation.",
+  work: "Targets tumors while sparing healthy tissue.",
+  app: "Oncology treatment"
+},
+{
+  name: "Dialysis Machine",
+  category: "Therapeutic",
+  img: "images/dialysis.jpg",
+  desc: "Removes waste from the blood.",
+  work: "Filters blood through a semipermeable membrane.",
+  app: "Kidney failure treatment"
+},
+{
+  name: "Infusion Pump",
+  category: "Therapeutic",
+  img: "images/infusionpump.jpg",
+  desc: "Delivers precise medication doses.",
+  work: "Controls flow rate electronically.",
+  app: "IV therapy and chemotherapy"
+},
+{
+  name: "Focused Ultrasound Therapy",
+  category: "Therapeutic",
+  img: "images/hifu.jpg",
+  desc: "Non-invasive tissue ablation technique.",
+  work: "Uses focused ultrasound waves to destroy tissue.",
+  app: "Tumor and pain treatment"
+},
+  // Monitoring
+  {
+    name: "Fitness Tracker / Smartwatch",
+    category: "Monitoring",
+    img:"images/smartwatch.jpg",
+    desc: "Tracks heart rate, activity, sleep.",
+    work: "Motion and optical sensors.",
+    app: "Personal monitoring"
+  },
+  {
+    name: "Pulse Oximeter",
+    category: "Monitoring",
+    img: "images/pulseoximeter.jpg",
+    desc: "Measures blood oxygen saturation.",
+    work: "Light absorption through tissue.",
+    app: "Hospital & home use"
+  },
+{
+  name: "Continuous Glucose Monitor",
+  category: "Monitoring",
+  img: "images/cgm.jpg",
+  desc: "Tracks glucose levels in real time.",
+  work: "Measures interstitial glucose via a skin sensor.",
+  app: "Diabetes management"
+},
+{
+  name: "Holter Monitor",
+  category: "Monitoring",
+  img: "images/holter.jpg",
+  desc: "Records heart activity over 24–48 hours.",
+  work: "Continuously monitors ECG signals.",
+  app: "Arrhythmia detection"
+},
+{
+  name: "Smart ECG Patch",
+  category: "Monitoring",
+  img: "images/ecgpatch.jpg",
+  desc: "Wearable ECG monitoring device.",
+  work: "Adheres to skin and records electrical heart signals.",
+  app: "Remote cardiac monitoring"
+},
+{
+  name: "Smart Ring",
+  category: "Monitoring",
+  img: "images/smartring.jpg",
+  desc: "Tracks vital signs and sleep patterns.",
+  work: "Uses optical sensors and accelerometers.",
+  app: "Health and sleep monitoring"
+},
+{
+  name: "Implantable Cardiac Monitor",
+  category: "Monitoring",
+  img: "images/cardiacmonitor.jpg",
+  desc: "Long-term heart rhythm monitoring.",
+  work: "Implanted under the skin to record ECG data.",
+  app: "Detection of silent arrhythmias"
+},
+  // Rehabilitation
+  {
+    name: "Prosthetics & Exoskeletons",
+    category: "Rehabilitation",
+    img: "images/exoskeleton.jpg",
+    desc: "Assistive movement systems.",
+    work: "Sensors and actuators support motion.",
+    app: "Rehabilitation centers"
+  },
+  {
+    name: "Neurostimulator",
+    category: "Rehabilitation",
+    img:"images/neuro.jpg",
+    desc: "Electrical stimulation for neurological therapy.",
+    work: "Controlled neural impulses.",
+    app: "Neurology clinics"
+  },
+{
+  name: "FES System",
+  category: "Rehabilitation",
+  img: "images/fes.jpg",
+  desc: "Stimulates muscles electrically.",
+  work: "Applies electrical impulses to nerves.",
+  app: "Stroke and spinal cord injury rehab"
+},
+{
+  name: "Rehabilitation Robot",
+  category: "Rehabilitation",
+  img: "images/rehabrobot.jpg",
+  desc: "Assists repetitive movement therapy.",
+  work: "Guides limb motion with controlled force.",
+  app: "Motor recovery therapy"
+},
+{
+  name: "VR Rehabilitation System",
+  category: "Rehabilitation",
+  img: "images/vrrehab.jpg",
+  desc: "Uses virtual reality for therapy.",
+  work: "Engages patients in interactive rehab exercises.",
+  app: "Neurological rehabilitation"
+},
+{
+  name: "Brain-Computer Interface",
+  category: "Rehabilitation",
+  img: "images/bci.jpg",
+  desc: "Connects brain signals to external devices.",
+  work: "Translates neural activity into commands.",
+  app: "Paralysis rehabilitation"
+},
+{
+  name: "Smart Orthotics",
+  category: "Rehabilitation",
+  img: "images/orthotics.jpg",
+  desc: "Adaptive orthopedic support devices.",
+  work: "Use sensors to adjust support dynamically.",
+  app: "Gait correction and recovery"
+},
+];
+
+  const grid = document.getElementById("deviceGrid");
+  const searchInput = document.getElementById("search");
+  const filterSelect = document.getElementById("filter");
+
+  function render() {
+    const q = searchInput.value.toLowerCase();
+    const f = filterSelect.value;
+    grid.innerHTML = "";
+
+    devices
+      .filter(d => f === "all" || d.category === f)
+      .filter(d => d.name.toLowerCase().includes(q))
+      .forEach(d => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <img src="${d.img}" alt="${d.name}">
+          <div class="card-content">
+            <h3>${d.name}</h3>
+            <p><strong>Category:</strong> ${d.category}</p>
+            <p><strong>Description:</strong> ${d.desc}</p>
+            <p><strong>How it works:</strong> ${d.work}</p>
+            <p><strong>Applications:</strong> ${d.app}</p>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+  }
+
+  searchInput.addEventListener("input", render);
+  filterSelect.addEventListener("change", render);
+  render();
+</script>
+
+</body>
+</html>
